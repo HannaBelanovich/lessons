@@ -15,14 +15,14 @@ const options = {
 
 options.makeTest();
 
-const {border, bg} = options.colours;
+// delete options.name;
+
+// console.log(options['colours']['border']); так делать не очень
+
+const {border, bg} = options.colours; //деструктуризация Объекта
 console.log(border);
 
 console.log(Object.keys(options).length);//т к получим массив из св-в, у которого уже есть св-во length
-
-// delete options.name;
-
-// console.log(options['colours']['border']);
 
 let counter = 0; // счетчик, чтобы посчитать сколько св-в
 
