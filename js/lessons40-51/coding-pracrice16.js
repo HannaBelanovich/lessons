@@ -23,3 +23,16 @@ function factorialByIteration(n) {
 
 console.log(factorialByIteration(5));
 
+function factorial(n) {
+    if (n <= 0) {
+        return 1;
+    } else if (!Number.isInteger(n) || isNaN(n)) {
+        return "ошибка";
+    } else {
+        if (n === 1) {
+            return n;
+        } else {
+            return n * factorial(n-1);
+        }
+    }
+}
